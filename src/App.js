@@ -1,9 +1,9 @@
 import { Navbar, NavbarBrand } from "reactstrap";
 import Menu from "./components/MenuComponent";
 import "./App.css";
-// import { DISHES } from "./shared/dish";
+import { DISHES } from "./shared/dish";
 
-function App(props) {
+function App() {
   return (
     <div className="App">
       <Navbar dark color="primary">
@@ -11,8 +11,8 @@ function App(props) {
           <NavbarBrand href="/">Ristorante de confusion</NavbarBrand>
         </div>
       </Navbar>
-      {/* <Menu dishes={DISHES} /> */}
-      <Menu/>
+      <Menu dishes={DISHES} />
+      
     </div>
   );
 }
